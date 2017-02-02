@@ -1,0 +1,42 @@
+digraph "DirectedGraph" {
+graph [concentrate = true];center=true;fontsize=6;node [ color=blue,shape="box"fontsize=6,fontcolor=black,fontname=Arial];edge [ color=black,fontsize=6,fontcolor=black,fontname=Arial]; 
+   "Node: synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V > Context: Everywhere" [ ]
+   "Node: synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeWorldClinit()V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/CMakeNfa, <init>()V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/CSet, <init>()V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/CMakeNfa, dodash(LJLex/CSet;)V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/CMakeNfa, reset()V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/SparseBitSet, <clinit>()V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/SparseBitSet, <init>()V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/CSet, add(I)V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/CSet, addncase(C)V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/SparseBitSet$1, <init>()V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/SparseBitSet$2, <init>()V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/SparseBitSet$3, <init>()V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/SparseBitSet, set(I)V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/SparseBitSet, bsearch(I)I > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/SparseBitSet, new_block(II)V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/CUtility, ASSERT(Z)V > Context: Everywhere" [ ]
+   "Node: < Application, LJLex/SparseBitSet, insert_block(II)V > Context: Everywhere" [ ]
+ "Node: synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V > Context: Everywhere" -> "Node: synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeWorldClinit()V > Context: Everywhere" 
+ "Node: synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V > Context: Everywhere" -> "Node: < Application, LJLex/CMakeNfa, <init>()V > Context: Everywhere" 
+ "Node: synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V > Context: Everywhere" -> "Node: < Application, LJLex/CSet, <init>()V > Context: Everywhere" 
+ "Node: synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V > Context: Everywhere" -> "Node: < Application, LJLex/CMakeNfa, dodash(LJLex/CSet;)V > Context: Everywhere" 
+ "Node: synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeWorldClinit()V > Context: Everywhere" -> "Node: < Application, LJLex/SparseBitSet, <clinit>()V > Context: Everywhere" 
+ "Node: < Application, LJLex/CMakeNfa, <init>()V > Context: Everywhere" -> "Node: < Application, LJLex/CMakeNfa, reset()V > Context: Everywhere" 
+ "Node: < Application, LJLex/CSet, <init>()V > Context: Everywhere" -> "Node: < Application, LJLex/SparseBitSet, <init>()V > Context: Everywhere" 
+ "Node: < Application, LJLex/CMakeNfa, dodash(LJLex/CSet;)V > Context: Everywhere" -> "Node: < Application, LJLex/CSet, add(I)V > Context: Everywhere" 
+ "Node: < Application, LJLex/CMakeNfa, dodash(LJLex/CSet;)V > Context: Everywhere" -> "Node: < Application, LJLex/CSet, addncase(C)V > Context: Everywhere" 
+ "Node: < Application, LJLex/SparseBitSet, <clinit>()V > Context: Everywhere" -> "Node: < Application, LJLex/SparseBitSet$1, <init>()V > Context: Everywhere" 
+ "Node: < Application, LJLex/SparseBitSet, <clinit>()V > Context: Everywhere" -> "Node: < Application, LJLex/SparseBitSet$2, <init>()V > Context: Everywhere" 
+ "Node: < Application, LJLex/SparseBitSet, <clinit>()V > Context: Everywhere" -> "Node: < Application, LJLex/SparseBitSet$3, <init>()V > Context: Everywhere" 
+ "Node: < Application, LJLex/CSet, add(I)V > Context: Everywhere" -> "Node: < Application, LJLex/SparseBitSet, set(I)V > Context: Everywhere" 
+ "Node: < Application, LJLex/CSet, addncase(C)V > Context: Everywhere" -> "Node: < Application, LJLex/CSet, add(I)V > Context: Everywhere" 
+ "Node: < Application, LJLex/SparseBitSet, set(I)V > Context: Everywhere" -> "Node: < Application, LJLex/SparseBitSet, bsearch(I)I > Context: Everywhere" 
+ "Node: < Application, LJLex/SparseBitSet, set(I)V > Context: Everywhere" -> "Node: < Application, LJLex/SparseBitSet, new_block(II)V > Context: Everywhere" 
+ "Node: < Application, LJLex/SparseBitSet, bsearch(I)I > Context: Everywhere" -> "Node: < Application, LJLex/CUtility, ASSERT(Z)V > Context: Everywhere" 
+ "Node: < Application, LJLex/SparseBitSet, new_block(II)V > Context: Everywhere" -> "Node: < Application, LJLex/CUtility, ASSERT(Z)V > Context: Everywhere" 
+ "Node: < Application, LJLex/SparseBitSet, new_block(II)V > Context: Everywhere" -> "Node: < Application, LJLex/SparseBitSet, insert_block(II)V > Context: Everywhere" 
+ "Node: < Application, LJLex/SparseBitSet, insert_block(II)V > Context: Everywhere" -> "Node: < Application, LJLex/CUtility, ASSERT(Z)V > Context: Everywhere" 
+
+}
